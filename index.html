@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Pizzaria Cut — A sua pizza favorita</title>
+  <meta name="description" content="Pizzaria Cut — pizzas artesanais, ingredientes frescos e entrega rápida." />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">  <!-- Fonte-->
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+  <header class="nav-wrap">
+    <div class="container nav">
+      <a href="#home" class="brand">
+        <img src="img/logo.jpg" alt="Logo Pizzaria Cut" class="logo">
+        <span>Pizzaria Cut</span>
+      </a>
+
+      <nav id="navbar" class="nav-links">
+        <a href="#home" class="nav-link">Início</a>
+        <a href="#menu" class="nav-link">Cardápio</a>
+        <a href="#about" class="nav-link">Sobre</a>
+        <a href="#contact" class="nav-link">Contato</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a id="orderBtn" class="btn btn-primary" href="https://api.whatsapp.com/send?phone=&text=Ol%C3%A1%2C%20quero%20fazer%20um%20pedido!">Peça Agora</a>
+        <button id="menuToggle" aria-label="Abrir menu" class="menu-toggle">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+
+  <section id="home" class="hero">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <div class="hero-text">
+        <h1>Pizza artesanal. Sabor de verdade.</h1>
+        <p>Feita com ingredientes frescos, massa esticada manualmente e assada no ponto certo.</p>
+        <div class="hero-ctas">
+          <a class="btn btn-primary" href="#menu">Ver Cardápio</a>
+          <a class="btn btn-ghost" href="https://api.whatsapp.com/send?phone=&text=Ol%C3%A1%2C%20quero%20fazer%20um%20pedido!">Peça pelo WhatsApp</a>
+        </div>
+      </div>
+
+      <div class="hero-image" aria-hidden="true">
+        <img src="img/pizza_pedra.jpg" alt="Pizza deliciosa na pedra">
+      </div>
+    </div>
+  </section>
+
+
+  <section id="menu" class="section">
+    <div class="container">
+      <h2 class="section-title">Nosso Cardápio</h2>
+      <p class="section-sub">Pizzas artesanais preparadas com carinho — escolha seu sabor.</p>
+
+      <div class="cards-grid">
+
+        <article class="card">
+          <img src="img/marguerita.jpg" alt="Pizza Margherita" class="card-image">
+          <div class="card-body">
+            <h3>Margherita</h3>
+            <p>Molho de tomate, muçarela, manjericão fresco.</p>
+            <div class="card-footer">
+              <span class="price">R$ 32,00</span>
+              <a class="btn btn-sm" href="https://api.whatsapp.com/send?phone=&text=Quero%20pedir%20uma%20Margherita%20-%20Pizzaria%20Cut">Pedir</a>
+            </div>
+          </div>
+        </article>
+
+
+        <article class="card">
+          <img src="img/peperoni.jpg" alt="Pizza Pepperoni" class="card-image">
+          <div class="card-body">
+            <h3>Pepperoni</h3>
+            <p>Pepperoni crocante, muçarela e toque de orégano.</p>
+            <div class="card-footer">
+              <span class="price">R$ 38,00</span>
+              <a class="btn btn-sm" href="https://api.whatsapp.com/send?phone=&text=Quero%20pedir%20uma%20Pepperoni%20-%20Pizzaria%20Cut">Pedir</a>
+            </div>
+          </div>
+        </article>
+
+
+        <article class="card">
+          <img src="img/calabresa.jpg" alt="Pizza Calabresa" class="card-image">
+          <div class="card-body">
+            <h3>Calabresa</h3>
+            <p>Calabresa fatiada, cebola caramelizada e muçarela.</p>
+            <div class="card-footer">
+              <span class="price">R$ 36,00</span>
+              <a class="btn btn-sm" href="https://api.whatsapp.com/send?phone=&text=Quero%20pedir%20uma%20Calabresa%20-%20Pizzaria%20Cut">Pedir</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="about" class="section alt">
+    <div class="container about-grid">
+      <div class="about-image">
+        <img src="img/forno.jpg" alt="Equipe da pizzaria ou forno">
+      </div>
+      <div class="about-text">
+        <h2>Sobre a Pizzaria Cut</h2>
+        <p>
+          Na Pizzaria Cut nós acreditamos que uma boa pizza começa com ingredientes selecionados e termina com carinho.
+          Fundada para levar sabor e alegria, nossa missão é criar sabores que tragam lembranças e juntam pessoas.
+        </p>
+        <ul class="about-list">
+          <li>Massa artesanal</li>
+          <li>Ingredientes frescos</li>
+          <li>Entrega rápida</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">O que dizem nossos clientes</h2>
+      <div class="testimonials">
+        <blockquote class="testimonial">"Melhor pizza da cidade. Massa incrível e recheio generoso!"</blockquote>
+        <blockquote class="testimonial">"Entrega super rápida e atendimento excelente."</blockquote>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="contact" class="section contact-section">
+    <div class="container contact-grid">
+      <div>
+        <h2>Contato & Localização</h2>
+        <p><strong>Endereço:</strong> Rua Exemplo, 123 — Centro</p>
+        <p><strong>Telefone:</strong> (xx) xxxx-xxxx</p>
+        <p><strong>Horário:</strong> Seg–Dom: 18:00 – 23:30</p>
+        <div class="contact-ctas">
+          <a class="btn btn-primary" href="https://api.whatsapp.com/send?phone=&text=Ol%C3%A1%2C%20gostaria%20de%20fazer%20um%20pedido">Pedir agora</a>
+          <a class="btn btn-ghost" href="https://www.google.com/maps" target="_blank" rel="noopener noreferrer">Ver no mapa</a>
+        </div>
+      </div>
+
+      <form class="contact-form" onsubmit="return handleContactSubmit(event)">
+        <label>
+          <span>Seu nome</span>
+          <input type="text" name="name" required>
+        </label>
+        <label>
+          <span>Mensagem</span>
+          <textarea name="message" rows="4" required></textarea>
+        </label>
+        <button class="btn btn-primary" type="submit">Enviar</button>
+      </form>
+    </div>
+  </section>
+
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <p>&copy; <span id="year"></span> Pizzaria Cut — Todos os direitos reservados.</p>
+        <p>Desenvolvido por NextLani Studio</p>
+      </div>
+      <div class="socials">
+        <a href="#" aria-label="Instagram">IG</a>
+        <a href="#" aria-label="Facebook">FB</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <a id="whatsappFloat" class="whatsapp-float" href="https://api.whatsapp.com/send?phone=&text=Ol%C3%A1%2C%20quero%20fazer%20um%20pedido!" aria-label="Abrir WhatsApp">
+    <svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor">
+      <path d="M20.52 3.48A11.85 11.85 0 0012 .5 11.78 11.78 0 001.5 12C1.5 14.07 2.04 16.01 3.01 17.66L.75 22l4.6-1.2A11.85 11.85 0 0012 23.5 11.78 11.78 0 0023.5 12a11.85 11.85 0 00-1-4.52zM12 21.5c-1.92 0-3.83-.5-5.46-1.43l-.39-.22L4 20l1.14-1.84-.25-.41A9.23 9.23 0 013 12 9 9 0 0112 3a9 9 0 019 9 9.23 9.23 0 01-9 9.5z"></path>
+    </svg>
+  </a>
+
+
+  <script src="js/script.js"></script>
+</body>
+</html>
